@@ -1,0 +1,54 @@
+{
+  "name": "ai-education-platform",
+  "version": "1.0.0",
+  "description": "AI-powered education platform for Indian educators and students",
+  "main": "index.js",
+  "scripts": {
+    "install:all": "npm run install:shared && npm run install:services && npm run install:clients",
+    "install:shared": "cd shared/common && npm install && cd ../database && npm install && cd ../security && npm install && cd ../monitoring && npm install",
+    "install:services": "cd services/authentication-service && npm install && cd ../ai-orchestration-service && npm install && cd ../content-generation-service && npm install",
+    "install:clients": "cd clients/web-app && npm install",
+    "build": "npm run build:shared && npm run build:services",
+    "build:shared": "cd shared/common && npm run build && cd ../database && npm run build && cd ../security && npm run build && cd ../monitoring && npm run build",
+    "build:services": "cd services/authentication-service && npm run build && cd ../ai-orchestration-service && npm run build && cd ../content-generation-service && npm run build",
+    "test": "npm run test:shared && npm run test:services",
+    "test:shared": "cd shared/common && npm test && cd ../database && npm test && cd ../security && npm test && cd ../monitoring && npm test",
+    "test:services": "cd services/authentication-service && npm test && cd ../ai-orchestration-service && npm test && cd ../content-generation-service && npm test",
+    "dev": "docker-compose -f docker-compose.dev.yml up --build",
+    "dev:down": "docker-compose -f docker-compose.dev.yml down",
+    "start": "docker-compose -f docker-compose.prod.yml up -d",
+    "stop": "docker-compose -f docker-compose.prod.yml down"
+  },
+  "workspaces": [
+    "shared/*",
+    "services/*",
+    "clients/*"
+  ],
+  "keywords": [
+    "ai",
+    "education",
+    "india",
+    "teachers",
+    "students",
+    "microservices",
+    "typescript"
+  ],
+  "author": "AI Education Platform Team",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0",
+    "ts-node": "^10.9.0",
+    "nodemon": "^3.0.0",
+    "eslint": "^8.50.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "prettier": "^3.0.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^14.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  }
+}

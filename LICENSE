@@ -1,0 +1,45 @@
+MIT License
+
+Copyright (c) 2024 AI Education Platform
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+Additional Terms for Educational Use:
+
+This software is specifically designed to support education and may include
+features, content, and integrations related to educational curricula, teaching
+methodologies, and student learning processes. 
+
+When using this software in educational environments:
+
+1. Student Privacy: All implementations must comply with applicable student
+   privacy laws including but not limited to FERPA (US), COPPA (US), and
+   relevant Indian data protection regulations.
+
+2. Content Responsibility: Users are responsible for ensuring that any AI-generated
+   educational content meets their local educational standards, cultural norms,
+   and curriculum requirements.
+
+3. Supervision Required: All student-facing AI features must be deployed with
+   appropriate supervision and safety measures as determined by educational
+   institutions.
+
+4. Attribution: When distributing modified versions, please maintain attribution
+   to the original AI Education Platform project and acknowledge its educational
+   purpose.

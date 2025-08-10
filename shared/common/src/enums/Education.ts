@@ -1,0 +1,144 @@
+/**
+ * Educational subjects supported by the platform
+ */
+export enum Subject {
+  MATHEMATICS = 'MATHEMATICS',
+  SCIENCE = 'SCIENCE',
+  PHYSICS = 'PHYSICS',
+  CHEMISTRY = 'CHEMISTRY',
+  BIOLOGY = 'BIOLOGY',
+  ENGLISH = 'ENGLISH',
+  HINDI = 'HINDI',
+  SOCIAL_STUDIES = 'SOCIAL_STUDIES',
+  HISTORY = 'HISTORY',
+  GEOGRAPHY = 'GEOGRAPHY',
+  CIVICS = 'CIVICS',
+  ECONOMICS = 'ECONOMICS',
+  COMPUTER_SCIENCE = 'COMPUTER_SCIENCE',
+  ART = 'ART',
+  PHYSICAL_EDUCATION = 'PHYSICAL_EDUCATION',
+  MUSIC = 'MUSIC',
+  ENVIRONMENTAL_STUDIES = 'ENVIRONMENTAL_STUDIES'
+}
+
+/**
+ * Grade levels in Indian education system
+ */
+export enum Grade {
+  NURSERY = 'NURSERY',
+  LKG = 'LKG',
+  UKG = 'UKG',
+  CLASS_1 = 'CLASS_1',
+  CLASS_2 = 'CLASS_2',
+  CLASS_3 = 'CLASS_3',
+  CLASS_4 = 'CLASS_4',
+  CLASS_5 = 'CLASS_5',
+  CLASS_6 = 'CLASS_6',
+  CLASS_7 = 'CLASS_7',
+  CLASS_8 = 'CLASS_8',
+  CLASS_9 = 'CLASS_9',
+  CLASS_10 = 'CLASS_10',
+  CLASS_11 = 'CLASS_11',
+  CLASS_12 = 'CLASS_12'
+}
+
+/**
+ * Curriculum standards in India
+ */
+export enum CurriculumStandard {
+  CBSE = 'CBSE',
+  ICSE = 'ICSE',
+  NCERT = 'NCERT',
+  MAHARASHTRA_BOARD = 'MAHARASHTRA_BOARD',
+  GUJARAT_BOARD = 'GUJARAT_BOARD',
+  KARNATAKA_BOARD = 'KARNATAKA_BOARD',
+  TAMIL_NADU_BOARD = 'TAMIL_NADU_BOARD',
+  WEST_BENGAL_BOARD = 'WEST_BENGAL_BOARD',
+  RAJASTHAN_BOARD = 'RAJASTHAN_BOARD',
+  UP_BOARD = 'UP_BOARD',
+  IB = 'IB',
+  CAMBRIDGE = 'CAMBRIDGE'
+}
+
+/**
+ * Languages supported by the platform
+ */
+export enum Language {
+  ENGLISH = 'ENGLISH',
+  HINDI = 'HINDI',
+  BENGALI = 'BENGALI',
+  TAMIL = 'TAMIL',
+  TELUGU = 'TELUGU',
+  MARATHI = 'MARATHI',
+  GUJARATI = 'GUJARATI',
+  KANNADA = 'KANNADA',
+  MALAYALAM = 'MALAYALAM',
+  PUNJABI = 'PUNJABI',
+  ODIA = 'ODIA',
+  ASSAMESE = 'ASSAMESE'
+}
+
+/**
+ * Content types that can be generated
+ */
+export enum ContentType {
+  LESSON_PLAN = 'LESSON_PLAN',
+  WORKSHEET = 'WORKSHEET',
+  PRESENTATION = 'PRESENTATION',
+  QUIZ = 'QUIZ',
+  EXAM = 'EXAM',
+  RUBRIC = 'RUBRIC',
+  ASSIGNMENT = 'ASSIGNMENT',
+  PROJECT = 'PROJECT',
+  UNIT_PLAN = 'UNIT_PLAN',
+  SYLLABUS = 'SYLLABUS'
+}
+
+/**
+ * Assessment types
+ */
+export enum AssessmentType {
+  FORMATIVE = 'FORMATIVE',
+  SUMMATIVE = 'SUMMATIVE',
+  DIAGNOSTIC = 'DIAGNOSTIC',
+  SELF_ASSESSMENT = 'SELF_ASSESSMENT',
+  PEER_ASSESSMENT = 'PEER_ASSESSMENT',
+  PROJECT_BASED = 'PROJECT_BASED'
+}
+
+/**
+ * Question types for assessments
+ */
+export enum QuestionType {
+  MULTIPLE_CHOICE = 'MULTIPLE_CHOICE',
+  TRUE_FALSE = 'TRUE_FALSE',
+  SHORT_ANSWER = 'SHORT_ANSWER',
+  LONG_ANSWER = 'LONG_ANSWER',
+  ESSAY = 'ESSAY',
+  FILL_IN_THE_BLANK = 'FILL_IN_THE_BLANK',
+  MATCHING = 'MATCHING',
+  ORDERING = 'ORDERING',
+  DRAG_AND_DROP = 'DRAG_AND_DROP'
+}
+
+/**
+ * Difficulty levels
+ */
+export enum DifficultyLevel {
+  BASIC = 'BASIC',
+  INTERMEDIATE = 'INTERMEDIATE',
+  ADVANCED = 'ADVANCED',
+  EXPERT = 'EXPERT'
+}
+
+/**
+ * Learning objective taxonomies (Bloom's)
+ */
+export enum BloomsTaxonomy {
+  REMEMBER = 'REMEMBER',
+  UNDERSTAND = 'UNDERSTAND',
+  APPLY = 'APPLY',
+  ANALYZE = 'ANALYZE',
+  EVALUATE = 'EVALUATE',
+  CREATE = 'CREATE'
+}

@@ -1,0 +1,43 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+# Validate commit message format
+echo "📝 Validating commit message..."
+
+# Read the commit message
+commit_message=$(cat "$1")
+
+# Define the pattern for conventional commits
+pattern="^(feat|fix|docs|style|refactor|test|chore|perf|ci|build|revert)(\(.+\))?: .{1,50}"
+
+# Check if commit message matches the pattern
+if echo "$commit_message" | grep -qE "$pattern"; then
+    echo "✅ Commit message format is valid"
+    exit 0
+else
+    echo "❌ Invalid commit message format!"
+    echo ""
+    echo "Commit message should follow the format:"
+    echo "<type>[optional scope]: <description>"
+    echo ""
+    echo "Types:"
+    echo "  feat     - A new feature"
+    echo "  fix      - A bug fix"
+    echo "  docs     - Documentation only changes"
+    echo "  style    - Changes that do not affect the meaning of the code"
+    echo "  refactor - A code change that neither fixes a bug nor adds a feature"
+    echo "  test     - Adding missing tests or correcting existing tests"
+    echo "  chore    - Changes to the build process or auxiliary tools"
+    echo "  perf     - A code change that improves performance"
+    echo "  ci       - Changes to CI configuration files and scripts"
+    echo "  build    - Changes that affect the build system or external dependencies"
+    echo "  revert   - Reverts a previous commit"
+    echo ""
+    echo "Examples:"
+    echo "  feat(auth): add JWT token refresh mechanism"
+    echo "  fix(ai): resolve OpenAI API rate limiting issue"
+    echo "  docs: update API documentation for content generation"
+    echo "  test(user): add unit tests for user registration flow"
+    echo ""
+    exit 1
+fi
